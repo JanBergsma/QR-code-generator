@@ -14,3 +14,22 @@ This challenge provides an excellent opportunity to practice your JavaScript ski
 - User can copy Quote to the clipboard by selecting Share button.
 - The page should be responsive on different screen sizes.
 - Deploy the solution and submit Repository URL and Demo URL.
+
+Did use [qrcode-svg](https://papnkukn.github.io/qrcode-svg/)
+
+Use on a HTML page with JavaScript
+
+```html
+<!doctype html>
+<html>
+  <body>
+    <div id="container"></div>
+    <script src="lib/qrcode.js"></script>
+    <script>
+      var qrcode = new QRCode("Hello World!");
+      var svg = qrcode.svg();
+      document.getElementById("container").innerHTML = svg;
+    </script>
+  </body>
+</html>
+```

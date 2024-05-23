@@ -20,14 +20,15 @@
   <body>
     <section>
       <img src="img/logo-qr-generator.svg" alt="QRCODE logo" />
-      <form>
+      <form action="qr-code.html">
         <input
           type="url"
           id="qr-code"
           name="qr-code"
           placeholder="Enter an url"
+          required
         />
-        <button type="submit">QR Code</button>
+        <button id="get-qr-code" class="btn" type="submit">QR Code</button>
       </form>
     </section>
   </body>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/Cute-Cat-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>QR code generator</title>
+  </head>
+  <body>
+    <img class="logo" src="img/logo-qr-generator.svg" alt="QRCODE logo" />
+
+    <section>
+      <div class="bgn-circle">
+        <div class="qrcode-container">
+          <img id="qrcode" src="img/loading.gif" alt="qr-code" />
+        </div>
+      </div>
+      <div class="btn-bar">
+        <a id="download" class="btn" download="QRcode">
+          Download
+          <img
+            class="btn-icon"
+            src="img/Load_circle_duotone.svg"
+            alt="download icon"
+          />
+        </a>
+        <button id="share" class="btn">
+          Share
+          <img class="btn-icon" src="img/link_alt.svg" alt="share icon" />
+        </button>
+      </div>
+    </section>
+    <script src="scripts/qrcode.js"></script>
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>
